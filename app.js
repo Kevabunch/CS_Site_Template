@@ -8,8 +8,5 @@ switcher.addEventListener('click', function() {
 });
 
 $("button").click(function(){
-    $(this).find("i").removeClass("fa-sun").addClass("fa-moon");
-});
-$("button").click(function(){
-    $(this).find("i").removeClass("fa-moon").addClass("fa-sun");
+    $(this).find("i").toggleClass("fa-moon");
 });
