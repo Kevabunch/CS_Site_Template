@@ -1,13 +1,88 @@
+
+:root {
+  --lightBg: #f1e7e5;
+  --lightText: #292b30;
+  --lightText2: #5a5880 ;
+  --lightBg2: #eecacd ;
+  --lightAcc: #cfa0b6 ;
+  --lightLink: #d6219a;
+
+  --darkBg: #282d3c ;
+  --darkText: #ffe8e1 ;
+  --darkText2: #ffc4d1 ;
+  --darkBg2: rgb(67, 73, 122) ;
+  --darkAcc: #5e7a94 ;
+  --darkLink: #10d3b9;
+
+  --white: #ffffff;
+  --black: #000000;
+}
+
 body {
-  background: lightblue;
+  background: var(--bg);
+  color: var(--fontColor);
+  font-family: helvetica;
+}
+
+.themeLight: before:: {
+  content: "\f185";
+}
+
+.light-theme {
+  --bg: var(--lightBg);
+  --fontColor: var(--lightText);
+  --headerColor: var(--lightText2);
+  --accent: var(--lightAcc);
+  --link: var(--lightLink);
+
+  --btnFontColor: var(--lightText2);
+  --btnBg: var(--lightAcc);
+}
+
+.dark-theme {
+  --bg: var(--darkBg);
+  --fontColor: var(--darkText);
+  --headerColor: var(--darkText2);
+  --accent: var(--darkAcc);
+  --link: var(--darkLink);
+
+  --btnFontColor: var(--darkText2);
+  --btnBg: var(--darkAcc);
+}
+
+.btn {
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn a {
+  color: var(--bg);
+  font-size: 125%;
+  text-decoration: none;
+}
+
+a {
+  color: var(--link);
+  font-weight: bold;
+}
+
+hr {
+  background-color: var(--accent);
+  height: 2px; 
+  border: 0;
 }
 
 h1 {
-  color: white;
-  text-align: center;
+  color: var(--headerColor);
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
+h2 {
+  color: var(--headerColor);
+}
+
+h3 {
+  color: var(--headerColor);
 }
