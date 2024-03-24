@@ -7,6 +7,9 @@ switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme');
 });
 
-$('.clk a').click(function(){
-    $(this).find('i').toggleClass('fa-sun fa-moon')
+$("button").click(function(){
+    $(this).find("i").removeClass("fa-sun").addClass("fa-moon");
+});
+$("button").click(function(){
+    $(this).find("i").removeClass("fa-moon").addClass("fa-sun");
 });
